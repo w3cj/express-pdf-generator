@@ -18,6 +18,8 @@ router.get('/pdf', function(req, res, next) {
         inputPath: `./emails/preparedHTML.html`,
         outputPath: `${filePath}`
     })
+
+		console.log('Building PDF...');
     htmlToPDF.build((error) => {
         if (error) {
             console.log(error);
