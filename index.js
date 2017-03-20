@@ -1,5 +1,6 @@
+const path = require('path');
 const ezc = require('express-zero-config');
-const HTMLToPDF = require('html5-to-pdf')
+const HTMLToPDF = require('html5-to-pdf');
 
 const router = ezc.createRouter();
 
@@ -36,4 +37,11 @@ router.get('/pdf', function(req, res, next) {
 
 });
 
-ezc.startServer(router, 5555);
+const app = ezc.createApp({
+  router,
+  static_dir: path.join(__dirname, 'emails')
+});
+
+const server = ezc.createServer(app); // createServer parameters: (express app, port_number)
+
+server.start();
