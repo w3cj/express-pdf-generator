@@ -36,4 +36,4 @@ router.get('/pdf', function(req, res, next) {
 
 });
 
-ezc.startServer(router);
+ezc.startServer(router, 5555);
