@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Voalte Accessories Quote</title>
+    <style>
+        p {
+            font-size: 0.75em;
+        }
+
+        h3 {
+            font-size: 0.75em;
+        }
+
+        .container {
+            width: 80vw;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            padding-top: 3em;
+        }
+
+        .logo-container {
+            margin-right: 0;
+            margin-left: auto;
+        }
+
+        .voalte-logo {
+            height: 5vh;
+        }
+
+        .address-text {
+            margin: 0;
+            margin-bottom: 0.05em;
+        }
+
+        .customer-header {
+            margin-top: 4em;
+        }
+
+        .customer-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .meta-text {
+            margin: 0;
+            margin-bottom: 0.35em;
+        }
+
+        .meta-container {
+            width: 30vw;
+        }
+
+        .quote-meta-information {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left-side,
+        .right-side {
+            text-align: right;
+            width: 50%;
+        }
+
+        .expiration-notice {
+            text-align: right;
+        }
+
+        .quote-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .table-entry {
+            margin: 0;
+            margin-top: 0.40em;
+        }
+
+        .left-justify {
+            text-align: left;
+            padding-left: 0.50em;
+        }
+
+        .right-justify {
+            text-align: right;
+            padding-right: 0.50em;
+        }
+
+        .table-headers,
+        .table-body,
+        .table-summary,
+        .t-and-c {
+            width: 80vw;
+        }
+
+        .table-headers {
+            height: 2vh;
+        }
+
+        .table-body {
+            height: 40vh;
+        }
+
+        .table-summary {
+            height: 4vh;
+        }
+
+        .qty-column,
+        .sku-column,
+        .product-name-column,
+        .price-column,
+        .extended-column,
+        .blank-column,
+        .total-label-column,
+        .total-value-column,
+        .t-and-c {
+            border: 1.5px solid black;
+        }
+
+        .qty-column,
+        .blank-column {
+            border-left: 2px solid black;
+        }
+
+        .extended-column,
+        .total-value-column {
+            border-right: 2px solid black;
+        }
+
+        .table-headers {
+            border-top: 1px solid black;
+        }
+
+        .table-summary {
+            border-bottom: 1px solid black;
+        }
+
+        .sku-column,
+        .extended-column,
+        .total-value-column {
+            width: 12.5vw;
+        }
+
+        .total-label-column,
+        .price-column {
+            width: 10vw;
+        }
+
+        .qty-column {
+            width: 6.25vw
+        }
+
+        .product-name-column {
+            width: 38.75vw;
+        }
+
+        .blank-column {
+            width: 57.50vw;
+        }
+
+        .quote-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1em;
+        }
+
+        .table-headers,
+        .table-body,
+        .table-summary {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .table-headers {
+            background-color: grey;
+        }
+
+        .quote-header-text {
+            margin: 0;
+            padding-top: 0.15em;
+            padding-left: 0.30em;
+        }
+
+        .other-details {
+            margin: 0;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .t-and-c {
+            height: 10vh;
+        }
+
+        .notice-text {
+            margin: 0;
+            margin-top: 0.5em;
+        }
+
+        .t-and-c-text {
+            margin: 0;
+            margin-bottom: 0.10em;
+            font-size: 0.60em
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <figure class="logo-container">
+            <img src="https://s3.amazonaws.com/voalte-website/wp-content/uploads/2015/09/08201942/voalte-logo.png" class="voalte-logo">
+            <img src="./emails/Voalte_Logo.jpg" class="voalte-logo">
+            <img src="/Voalte_Logo.jpg" class="voalte-logo">
+        </figure>
+
+        <section class="voalte-contact-section">
+            <p class="address-text">Voalte, Inc.</p>
+            <p class="address-text">5101 Fruitville Road, Suite 200</p>
+            <p class="address-text">(941) 312-2830</p>
+            <p class="address-text">Fax: (941) 371-1400</p>
+        </section>
+
+        <div class="customer-header">
+            <section class="hospital-contact-section">
+                <p class="address-text">Quote To:</p>
+                <p class="address-text">Memorial Hospital</p>
+                <p class="address-text">Somewhere in Denver</p>
+                <p class="address-text">80221</p>
+            </section>
+
+            <div class="meta-container">
+                <section class="quote-meta-information">
+                    <div class="left-side">
+                        <p class="meta-text">Quotation #:</p>
+                    </div>
+
+                    <div class="right-side">
+                        <p class="meta-text">QT_234987234</p>
+                    </div>
+                </section>
+
+                <section class="">
+                    <div class="expiration-notice">
+                        <p class="meta-text">Quotes are valid for 90 days</p>
+                    </div>
+                </section>
+
+                <section class="quote-meta-information">
+                    <div class="left-side">
+                        <p class="meta-text">Quote Issue Date:</p>
+                    </div>
+
+                    <div class="right-side">
+                        <p class="meta-text">03/08/2017</p>
+                    </div>
+                </section>
+
+                <section class="quote-meta-information">
+                    <div class="left-side">
+                        <p class="meta-text">Expiration Date:</p>
+                    </div>
+
+                    <div class="right-side">
+                        <p class="meta-text">06/06/2017</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section class="quote-container">
+
+            <div class="table-headers">
+                <div class="qty-column">
+                    <h3 class="quote-header-text">QTY</h3>
+                </div>
+
+                <div class="sku-column">
+                    <h3 class="quote-header-text">SKU</h3>
+                </div>
+
+                <div class="product-name-column">
+                    <h3 class="quote-header-text">Product Name</h3>
+                </div>
+
+                <div class="price-column">
+                    <h3 class="quote-header-text">Price</h3>
+                </div>
+
+                <div class="extended-column">
+                    <h3 class="quote-header-text">Extended</h3>
+                </div>
+            </div>
+
+            <div class="table-body">
+                <div class="qty-column">
+                    <p class="table-entry right-justify">10</p>
+                    <p class="table-entry right-justify">5</p>
+                    <p class="table-entry right-justify">13</p>
+                    <p class="table-entry right-justify">20</p>
+                    <p class="table-entry right-justify">12</p>
+                </div>
+
+                <div class="sku-column">
+                    <p class="table-entry right-justify">ACC-4008-1</p>
+                    <p class="table-entry right-justify">ACC-4009-1</p>
+                    <p class="table-entry right-justify">ACC-4010-1</p>
+                    <p class="table-entry right-justify">ACC-4243-1</p>
+                    <p class="table-entry right-justify">ACC-4611</p>
+                </div>
+
+                <div class="product-name-column">
+                    <p class="table-entry right-justify">90 Deg. Micro USB Cable w/ Stopper Ball</p>
+                    <p class="table-entry right-justify">30 Pin Stopper Ball Cables</p>
+                    <p class="table-entry right-justify">Lightning Cable</p>
+                    <p class="table-entry right-justify">30-Pin Connector Tip for iDapt</p>
+                    <p class="table-entry right-justify">Mophie Hip Holster for iPhone 3GS/4/4S MOQ...</p>
+                </div>
+
+                <div class="price-column">
+                    <p class="table-entry right-justify">1.17</p>
+                    <p class="table-entry right-justify">3.58</p>
+                    <p class="table-entry right-justify">20.87</p>
+                    <p class="table-entry right-justify">1.51</p>
+                    <p class="table-entry right-justify">16.48</p>
+                </div>
+
+                <div class="extended-column">
+                    <p class="table-entry right-justify">99.90</p>
+                    <p class="table-entry right-justify">49.95</p>
+                    <p class="table-entry right-justify">129.87</p>
+                    <p class="table-entry right-justify">199.80</p>
+                    <p class="table-entry right-justify">119.88</p>
+                </div>
+            </div>
+
+            <div class="table-summary">
+                <div class="blank-column">
+
+                </div>
+
+                <div class="total-label-column">
+                    <h3 class="left-justify">Total</h3>
+                </div>
+
+                <div class="total-value-column">
+                    <p class="right-justify">$599.40</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="other-details">
+            <p>Attach Purchase Orders at Voalte Ordering Portal</p>
+        </section>
+
+        <section class="t-and-c">
+            <p class="left-justify notice-text">NOTICE:</p>
+            <br>
+            <p class="left-justify t-and-c-text">This quote is subject to the terms and conditions set forth in the Voalte Master Terms and Conditions.</p>
+            <p class="left-justify t-and-c-text">This quote contains confidential and proprietary information of Voalte and is intended for use only by the customer whose name appears on this quotation.</p>
+            <p class="left-justify t-and-c-text">It may not be disclosed to third parties without prior consent of Voalte.</p>
+
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
